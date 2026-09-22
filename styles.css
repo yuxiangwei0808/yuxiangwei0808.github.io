@@ -72,6 +72,7 @@ a {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 22px;
   color: var(--muted);
@@ -410,20 +411,26 @@ h3 {
   gap: 14px;
 }
 
-.awards-list {
+.awards-list,
+.service-list {
   display: grid;
   gap: 10px;
   margin: 0;
   padding-left: 22px;
 }
 
-.awards-list li {
+.awards-list li,
+.service-list li {
   padding-left: 4px;
   color: var(--ink);
+}
+
+.awards-list li {
   font-weight: 700;
 }
 
-.awards-list li::marker {
+.awards-list li::marker,
+.service-list li::marker {
   color: var(--teal);
 }
 
@@ -487,6 +494,7 @@ h3 {
 
   .nav {
     width: 100%;
+    flex-wrap: nowrap;
     gap: 10px;
     overflow-x: auto;
     padding-bottom: 2px;

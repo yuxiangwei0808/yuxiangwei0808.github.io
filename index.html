@@ -6,13 +6,13 @@
     <title>Yuxiang Wei</title>
     <meta
       name="description"
-      content="Yuxiang Wei is a PhD student at Georgia Tech building foundation models for fMRI and benchmarks for reliable language agents."
+      content="Yuxiang Wei is a Ph.D. student at Georgia Tech researching foundation and world models of brain dynamics, alongside memory, post-training, and evaluation for LLM agents."
     >
     <meta name="author" content="Yuxiang Wei">
     <meta property="og:title" content="Yuxiang Wei">
     <meta
       property="og:description"
-      content="PhD student at Georgia Tech building fMRI foundation models and evaluating LLM memory and coding agents."
+      content="Ph.D. student at Georgia Tech researching foundation and world models of brain dynamics, and memory, post-training, and evaluation for LLM agents."
     >
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles.css">
@@ -38,19 +38,18 @@
         <div class="hero-content">
           <h1>Yuxiang Wei</h1>
           <p class="hero-meta">
-            <span>PhD Student in ECE, Georgia Tech</span>
+            <span>Ph.D. Student in ECE, Georgia Tech</span>
             <span class="meta-sep" aria-hidden="true">&middot;</span>
             <span>Advisor: <a href="https://research.gatech.edu/people/vince-calhoun" target="_blank" rel="noopener noreferrer">Vince D. Calhoun</a></span>
             <span class="meta-sep" aria-hidden="true">&middot;</span>
             <a href="mailto:weiyuxiang@gatech.edu">weiyuxiang@gatech.edu</a>
           </p>
-          <p class="lead">
-            I build foundation models and world models for fMRI, alongside benchmarks and governance frameworks for reliable LLM agents.
-          </p>
-          <p class="summary">
-            At Georgia Tech, my research connects brain dynamics with language and vision through latent brain world models,
-            language-aligned fMRI foundation models, and generative neural decoding. Beyond neuroscience, I study post-training
-            and evaluation for agentic systems&mdash;spanning long-term memory, interactive coding benchmarks, and trustworthy scientific agents.
+          <p class="bio-text">
+            I am a Ph.D. student in Electrical and Computer Engineering at <strong>Georgia Tech</strong>, advised by
+            <a href="https://research.gatech.edu/people/vince-calhoun" target="_blank" rel="noopener noreferrer">Vince D. Calhoun</a>
+            at the <a href="https://trendscenter.org/" target="_blank" rel="noopener noreferrer">TReNDS Center</a>.
+            Previously, I worked as a research and applied scientist intern at <strong>Handshake AI</strong>, <strong>Amazon</strong>, and <strong>Tencent</strong>,
+            and as an undergraduate researcher at <strong>Harvard Medical School</strong> and <strong>Tsinghua University</strong>.
           </p>
           <div class="actions" aria-label="Profile links">
             <a class="button primary" href="YuxiangWei.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
@@ -69,32 +68,43 @@
       <section id="research" class="section research-section">
         <div class="section-inner">
           <div class="research-header">
-            <p class="eyebrow">Research Pillars</p>
+            <p class="eyebrow">Research Focus</p>
           </div>
           <div class="research-grid">
-            <article class="card">
-              <h3>Foundation &amp; World Models</h3>
-              <p>
-                Multimodal fMRI foundation models and JEPA-trained latent world models for brain dynamics, neural decoding, and cross-subject generalization.
+            <article class="card horizon-card">
+              <h3>Foundation &amp; World Models of Brain Dynamics</h3>
+              <p class="horizon-subtitle">
+                Shifting neuroimaging from static, cohort-specific prediction toward models that reason over neural signals and simulate how individual brains evolve.
               </p>
+              <ul class="horizon-list">
+                <li>
+                  <strong>World models of individual brain state:</strong> learning latent dynamics that infer an individual's ongoing brain state from past activity, forecast its stimulus-driven evolution over multi-minute horizons, and update as new observations arrive&mdash;separating personal state from shared stimulus responses.
+                </li>
+                <li>
+                  <strong>Language-aligned foundation models &amp; LLM post-training:</strong> tokenizing continuous fMRI into language-compatible representations and post-training LLMs (via instruction tuning, preference optimization, and verifiable rewards) to interpret and reason natively over brain recordings.
+                </li>
+                <li>
+                  <strong>Cross-subject decoding &amp; pre-symptomatic dynamics:</strong> grounding generative visual decoding in functional brain topology for parameter-efficient adaptation across individuals, and modeling dynamic connectivity shifts for early neurological risk detection.
+                </li>
+              </ul>
             </article>
-            <article class="card">
-              <h3>Clinical Neuroimaging</h3>
-              <p>
-                Dynamic brain connectivity and multimodal neuroimaging models for early Alzheimer's assessment and interpretable clinical biomarkers.
+
+            <article class="card horizon-card">
+              <h3>Memory, Post-Training &amp; Evaluation for LLM Agents</h3>
+              <p class="horizon-subtitle">
+                Understanding what makes language agents reliable beyond single-turn benchmarks&mdash;across how they remember, interact with users, and report scientific findings.
               </p>
-            </article>
-            <article class="card">
-              <h3>Agentic Memory</h3>
-              <p>
-                Modular architectures and empirical analysis for representing, indexing, retrieving, and maintaining long-horizon memory in LLM agents.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Agent Benchmarks &amp; Governance</h3>
-              <p>
-                Executable evaluation suites and deterministic verification frameworks for interactive coding agents and trustworthy scientific reporting.
-              </p>
+              <ul class="horizon-list">
+                <li>
+                  <strong>Interactive evaluation &amp; post-training for coding agents:</strong> designing interactive benchmarks with grounded user simulation to measure how specification, clarification, and execution feedback shape agent performance, alongside RL post-training for multi-step, tool-using workflows.
+                </li>
+                <li>
+                  <strong>System-level design of long-term memory:</strong> decomposing dialog and AI-clone memory into representation, indexing, retrieval, and maintenance to isolate when relational graph structure genuinely helps versus strong, well-calibrated flat baselines.
+                </li>
+                <li>
+                  <strong>Claim governance for scientific agents:</strong> separating code execution from scientific reporting decisions via pre-specified analysis plans and deterministic verification gates, preventing LLM judges from endorsing confounded or non-replicating claims.
+                </li>
+              </ul>
             </article>
           </div>
         </div>

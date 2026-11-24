@@ -130,29 +130,270 @@
             <div>
               <h2>Publications</h2>
             </div>
-            <a class="text-link" href="https://scholar.google.com/citations?user=iGde1EAAAAAJ">Full Google Scholar profile</a>
+            <div class="section-controls">
+              <div class="pub-tabs" role="tablist" aria-label="Publication list view">
+                <button
+                  type="button"
+                  class="pub-tab is-active"
+                  role="tab"
+                  id="tab-selected"
+                  aria-selected="true"
+                  aria-controls="panel-selected"
+                  data-pub-tab="selected"
+                >
+                  Selected (5)
+                </button>
+                <button
+                  type="button"
+                  class="pub-tab"
+                  role="tab"
+                  id="tab-all"
+                  aria-selected="false"
+                  aria-controls="panel-all"
+                  tabindex="-1"
+                  data-pub-tab="all"
+                >
+                  Full List (21)
+                </button>
+              </div>
+              <a class="text-link" href="https://scholar.google.com/citations?user=iGde1EAAAAAJ" target="_blank" rel="noopener noreferrer">Full Google Scholar profile</a>
+            </div>
           </div>
 
+          <div id="panel-selected" class="pub-panel" role="tabpanel" aria-labelledby="tab-selected">
+            <div class="project-list">
+              <article class="project-card">
+                <button
+                  type="button"
+                  class="project-media"
+                  data-lightbox-src="assets/projects/state-of-mind.webp"
+                  data-lightbox-alt="Overview of Spectator and BrainStateBench for learning and evaluating brain world models"
+                  aria-label="Zoom figure for State of Mind"
+                >
+                  <img
+                    src="assets/projects/state-of-mind.webp"
+                    alt="Overview of Spectator and BrainStateBench for learning and evaluating brain world models"
+                    loading="lazy"
+                  />
+                  <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+                <div class="project-body">
+                  <div class="project-meta">
+                    <span class="venue-badge">arXiv 2026</span>
+                    <span class="topic-tag">Brain World Models</span>
+                  </div>
+                  <h3 class="project-title">
+                    <a href="https://yuxiangwei0808.github.io/State-of-Mind/" target="_blank" rel="noopener noreferrer">
+                      State of Mind: Learning and Evaluating World Models of Naturalistic Brain Dynamics
+                    </a>
+                  </h3>
+                  <p class="project-authors">
+                    <span class="author-highlight">Yuxiang Wei</span><sup>&dagger;</sup>, Zundong Wu<sup>&dagger;</sup>, Weiyu Sun<sup>&dagger;</sup>, Qizhen Lan, Yanteng Zhang, Vince D. Calhoun.
+                  </p>
+                  <p class="project-tldr">
+                    Introduces <strong>Spectator</strong>, a JEPA-trained two-timescale linear latent world model, and <strong>BrainStateBench</strong> for naturalistic fMRI&mdash;doubling state-tracking accuracy with stable 5-minute rollouts at &gt;20&times; Transformer speed and zero-shot transfer to 184 individuals.
+                  </p>
+                  <div class="project-links">
+                    <a class="chip-link primary" href="https://yuxiangwei0808.github.io/State-of-Mind/" target="_blank" rel="noopener noreferrer">Project Page</a>
+                    <a class="chip-link" href="https://arxiv.org/abs/2611.28508" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a class="chip-link" href="https://github.com/yuxiangwei0808/State-of-Mind" target="_blank" rel="noopener noreferrer">Code</a>
+                    <a class="chip-link" href="https://huggingface.co/stanjsx/Spectator" target="_blank" rel="noopener noreferrer">HuggingFace</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <button
+                  type="button"
+                  class="project-media"
+                  data-lightbox-src="assets/projects/fmri-lm.webp"
+                  data-lightbox-alt="Three-stage training pipeline of fMRI-LM for language-aligned fMRI understanding"
+                  aria-label="Zoom figure for fMRI-LM"
+                >
+                  <img
+                    src="assets/projects/fmri-lm.webp"
+                    alt="Three-stage training pipeline of fMRI-LM for language-aligned fMRI understanding"
+                    loading="lazy"
+                  />
+                  <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+                <div class="project-body">
+                  <div class="project-meta">
+                    <span class="venue-badge">CVPR 2026</span>
+                    <span class="topic-tag">Multimodal Foundation Models</span>
+                  </div>
+                  <h3 class="project-title">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wei_fMRI-LM_Towards_a_Universal_Foundation_Model_for_Language-Aligned_fMRI_Understanding_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer">
+                      fMRI-LM: Towards a Universal Foundation Model for Language-Aligned fMRI Understanding
+                    </a>
+                  </h3>
+                  <p class="project-authors">
+                    <span class="author-highlight">Yuxiang Wei</span>, Yanteng Zhang, Xi Xiao, Chengxuan Qian, Tianyang Wang, Vince D. Calhoun.
+                  </p>
+                  <p class="project-tldr">
+                    Pretrains a text-aligned fMRI tokenizer on 50,000+ scans to map brain dynamics into discrete tokens and post-trains an LLM across multi-paradigm instructions for universal neural understanding, reasoning, and few-shot transfer.
+                  </p>
+                  <div class="project-links">
+                    <a class="chip-link" href="https://openaccess.thecvf.com/content/CVPR2026/html/Wei_fMRI-LM_Towards_a_Universal_Foundation_Model_for_Language-Aligned_fMRI_Understanding_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a class="chip-link" href="https://github.com/yuxiangwei0808/fMRI-LM" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <button
+                  type="button"
+                  class="project-media"
+                  data-lightbox-src="assets/projects/confirm.svg"
+                  data-lightbox-alt="CONFIRM governance framework and deterministic verification gates for scientific agents"
+                  aria-label="Zoom figure for CONFIRM"
+                >
+                  <img
+                    src="assets/projects/confirm.svg"
+                    alt="CONFIRM governance framework and deterministic verification gates for scientific agents"
+                    loading="lazy"
+                  />
+                  <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+                <div class="project-body">
+                  <div class="project-meta">
+                    <span class="venue-badge">arXiv 2026</span>
+                    <span class="topic-tag">Trustworthy Scientific Agents</span>
+                  </div>
+                  <h3 class="project-title">
+                    <a href="https://yuxiangwei0808.github.io/CONFIRM/" target="_blank" rel="noopener noreferrer">
+                      CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging
+                    </a>
+                  </h3>
+                  <p class="project-authors">
+                    <span class="author-highlight">Yuxiang Wei</span>, Lijing Zhu, Qizhen Lan, Yanteng Zhang, Vince D. Calhoun.
+                  </p>
+                  <p class="project-tldr">
+                    Governs autonomous research agents on <strong>NeuroClaimBench</strong> (489 executable claims) by separating execution from claim reporting via frozen analysis plans and five deterministic verification gates, cutting false support on confounded controls from 23&ndash;38% to 0%.
+                  </p>
+                  <div class="project-links">
+                    <a class="chip-link primary" href="https://yuxiangwei0808.github.io/CONFIRM/" target="_blank" rel="noopener noreferrer">Project Page</a>
+                    <a class="chip-link" href="https://arxiv.org/abs/2611.01449" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a class="chip-link" href="https://github.com/yuxiangwei0808/CONFIRM" target="_blank" rel="noopener noreferrer">Code</a>
+                    <a class="chip-link" href="https://huggingface.co/datasets/stanjsx/NeuroClaimBench" target="_blank" rel="noopener noreferrer">Dataset</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <button
+                  type="button"
+                  class="project-media"
+                  data-lightbox-src="assets/projects/more-brain.webp"
+                  data-lightbox-alt="Architecture of MoRE-Brain with hierarchical fMRI MoE encoder and time-and-space diffusion routing"
+                  aria-label="Zoom figure for MoRE-Brain"
+                >
+                  <img
+                    src="assets/projects/more-brain.webp"
+                    alt="Architecture of MoRE-Brain with hierarchical fMRI MoE encoder and time-and-space diffusion routing"
+                    loading="lazy"
+                  />
+                  <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+                <div class="project-body">
+                  <div class="project-meta">
+                    <span class="venue-badge">NeurIPS 2025</span>
+                    <span class="topic-tag">Generative Brain Decoding</span>
+                  </div>
+                  <h3 class="project-title">
+                    <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/50ea4dbd1cff6bd3daef939eff10c092-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">
+                      MoRE-Brain: Routed Mixture of Experts for Interpretable and Generalizable Cross-Subject fMRI Visual Decoding
+                    </a>
+                  </h3>
+                  <p class="project-authors">
+                    <span class="author-highlight">Yuxiang Wei</span>, Yanteng Zhang, Xi Xiao, Tianyang Wang, Xiao Wang, Vince D. Calhoun.
+                  </p>
+                  <p class="project-tldr">
+                    Routes voxel activity through an interpretable hierarchical Mixture-of-Experts encoder with dynamic time-and-space diffusion conditioning, reconstructing visual stimuli while adapting to new subjects with ~90% fewer trainable parameters.
+                  </p>
+                  <div class="project-links">
+                    <a class="chip-link" href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/50ea4dbd1cff6bd3daef939eff10c092-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a class="chip-link" href="https://github.com/yuxiangwei0808/MoRE-Brain" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <button
+                  type="button"
+                  class="project-media"
+                  data-lightbox-src="assets/projects/unified-mem.webp"
+                  data-lightbox-alt="Unified three-stage dialog memory framework comparing flat and graph memory indexing and retrieval"
+                  aria-label="Zoom figure for Does Memory Need Graphs"
+                >
+                  <img
+                    src="assets/projects/unified-mem.webp"
+                    alt="Unified three-stage dialog memory framework comparing flat and graph memory indexing and retrieval"
+                    loading="lazy"
+                  />
+                  <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
+                </button>
+                <div class="project-body">
+                  <div class="project-meta">
+                    <span class="venue-badge">ACL Main 2026</span>
+                    <span class="topic-tag">Long-Term Agent Memory</span>
+                  </div>
+                  <h3 class="project-title">
+                    <a href="https://aclanthology.org/2026.acl-long.1232/" target="_blank" rel="noopener noreferrer">
+                      Does Memory Need Graphs? A Unified Framework and Empirical Analysis for Long-Term Dialog Memory
+                    </a>
+                  </h3>
+                  <p class="project-authors">
+                    Sen Hu<sup>&dagger;</sup>, <span class="author-highlight">Yuxiang Wei</span><sup>&dagger;</sup>, Jiaxin Ran<sup>&dagger;</sup>, et al.
+                  </p>
+                  <p class="project-tldr">
+                    Decomposes LLM agent memory into modular extraction, indexing, and retrieval stages&mdash;revealing when relational graph structures genuinely aid multi-hop reasoning versus strong flat and entity-centric baselines.
+                  </p>
+                  <div class="project-links">
+                    <a class="chip-link" href="https://aclanthology.org/2026.acl-long.1232/" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a class="chip-link" href="https://github.com/AvatarMemory/UnifiedMem" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="selected-footer">
+              <p class="publication-note"><sup>&dagger;</sup> Equal contribution.</p>
+              <button type="button" class="text-button" data-switch-tab="all">View all 21 publications &rarr;</button>
+            </div>
+          </div>
+
+          <div id="panel-all" class="pub-panel" role="tabpanel" aria-labelledby="tab-all" hidden>
           <div class="publication-group">
             <h3>fMRI Representation and Foundation Models</h3>
             <p class="publication-group-summary">
-              Language-aligned, vision-transformer, and sequence-modeling approaches for general fMRI understanding,
-              representation learning, and brain signal analysis.
+              Latent world models, language-aligned foundation models, vision transformers, and sequence-modeling
+              approaches for naturalistic brain dynamics, representation learning, and whole-brain MRI analysis.
             </p>
             <ol class="publication-list">
               <li>
-                <strong>Scaling Vision Transformers for Functional MRI with Flat Maps.</strong>
-                Connor Lane, Mihir Tripathy, Yuxiang Wei, Paul S. Scotti, et al.
+                <strong><a href="https://arxiv.org/abs/2611.28508" target="_blank" rel="noopener noreferrer">State of Mind: Learning and Evaluating World Models of Naturalistic Brain Dynamics.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span><sup>&dagger;</sup>, Zundong Wu<sup>&dagger;</sup>, Weiyu Sun<sup>&dagger;</sup>, Qizhen Lan, Yanteng Zhang, Vince D. Calhoun.
+                <em>arXiv preprint</em>, 2026.
+              </li>
+              <li>
+                <strong><a href="https://arxiv.org/abs/2611.05348" target="_blank" rel="noopener noreferrer">OpenBrain: An Auditable Generated-Label Release for Whole-Brain MRI Parcellation.</a></strong>
+                Qizhen Lan, Yu-Chun Hsu, <span class="author-highlight">Yuxiang Wei</span>, Lijing Zhu, Zenan Sun, Liang He, Lishan Yu, Xiaoqian Jiang.
+                <em>NeurIPS (Evaluations and Datasets Track)</em>, 2026.
+              </li>
+              <li>
+                <strong><a href="https://arxiv.org/abs/2510.13768" target="_blank" rel="noopener noreferrer">Scaling Vision Transformers for Functional MRI with Flat Maps.</a></strong>
+                Connor Lane, Mihir Tripathy, <span class="author-highlight">Yuxiang Wei</span>, Paul S. Scotti, et al.
                 <em>ICML</em>, 2026.
               </li>
               <li>
-                <strong>fMRI-LM: Towards a Universal Foundation Model for Language-Aligned fMRI Understanding.</strong>
-                Yuxiang Wei, Yanteng Zhang, Xi Xiao, Chengxuan Qian, Tianyang Wang, Vince D. Calhoun.
+                <strong><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wei_fMRI-LM_Towards_a_Universal_Foundation_Model_for_Language-Aligned_fMRI_Understanding_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer">fMRI-LM: Towards a Universal Foundation Model for Language-Aligned fMRI Understanding.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Yanteng Zhang, Xi Xiao, Chengxuan Qian, Tianyang Wang, Vince D. Calhoun.
                 <em>CVPR</em>, 2026.
               </li>
               <li>
-                <strong>Hierarchical Spatio-Temporal State-Space Modeling for fMRI Analysis.</strong>
-                Yuxiang Wei, Anees Abrol, Vince D. Calhoun.
+                <strong><a href="https://doi.org/10.1007/978-3-031-90252-9_6" target="_blank" rel="noopener noreferrer">Hierarchical Spatio-Temporal State-Space Modeling for fMRI Analysis.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Anees Abrol, Vince D. Calhoun.
                 <em>RECOMB</em>, 2025.
               </li>
             </ol>
@@ -166,9 +407,24 @@
             </p>
             <ol class="publication-list">
               <li>
-                <strong>MoRE-Brain: Routed Mixture of Experts for Interpretable and Generalizable Cross-Subject fMRI Visual Decoding.</strong>
-                Yuxiang Wei, Yanteng Zhang, Xi Xiao, Tianyang Wang, Xiao Wang, Vince D. Calhoun.
+                <strong><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/50ea4dbd1cff6bd3daef939eff10c092-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">MoRE-Brain: Routed Mixture of Experts for Interpretable and Generalizable Cross-Subject fMRI Visual Decoding.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Yanteng Zhang, Xi Xiao, Tianyang Wang, Xiao Wang, Vince D. Calhoun.
                 <em>NeurIPS</em>, 2025.
+              </li>
+            </ol>
+          </div>
+
+          <div class="publication-group">
+            <h3>Trustworthy Scientific Agents</h3>
+            <p class="publication-group-summary">
+              Governance and verification frameworks for autonomous LLM scientific agents, separating analysis
+              execution from claim reporting via pre-specified plans and deterministic checks.
+            </p>
+            <ol class="publication-list">
+              <li>
+                <strong><a href="https://arxiv.org/abs/2611.01449" target="_blank" rel="noopener noreferrer">CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Lijing Zhu, Qizhen Lan, Yanteng Zhang, Vince D. Calhoun.
+                <em>arXiv preprint</em>, 2026.
               </li>
             </ol>
           </div>
@@ -181,17 +437,16 @@
             </p>
             <ol class="publication-list">
               <li>
-                <strong>Does Memory Need Graphs? A Unified Framework and Empirical Analysis for Long-Term Dialog Memory.</strong>
-                Sen Hu<sup>&dagger;</sup>, Yuxiang Wei<sup>&dagger;</sup>, JiaXin Ran, et al.
+                <strong><a href="https://aclanthology.org/2026.acl-long.1232/" target="_blank" rel="noopener noreferrer">Does Memory Need Graphs? A Unified Framework and Empirical Analysis for Long-Term Dialog Memory.</a></strong>
+                Sen Hu<sup>&dagger;</sup>, <span class="author-highlight">Yuxiang Wei</span><sup>&dagger;</sup>, Jiaxin Ran<sup>&dagger;</sup>, et al.
                 <em>ACL Main</em>, 2026.
               </li>
               <li>
-                <strong>CloneMem: Benchmarking Long-Term Memory for AI Clones.</strong>
-                Sen Hu<sup>&dagger;</sup>, Zhiyu Zhang<sup>&dagger;</sup>, Yuxiang Wei<sup>&dagger;</sup>, Xueran Han, et al.
+                <strong><a href="https://aclanthology.org/2026.acl-long.1549/" target="_blank" rel="noopener noreferrer">CloneMem: Benchmarking Long-Term Memory for AI Clones.</a></strong>
+                Sen Hu<sup>&dagger;</sup>, Zhiyu Zhang<sup>&dagger;</sup>, <span class="author-highlight">Yuxiang Wei</span><sup>&dagger;</sup>, Xueran Han, et al.
                 <em>ACL Main</em>, 2026.
               </li>
             </ol>
-            <p class="publication-note"><sup>&dagger;</sup> Equal contribution.</p>
           </div>
 
           <div class="publication-group">
@@ -202,19 +457,24 @@
             </p>
             <ol class="publication-list">
               <li>
-                <strong>4D Multimodal Co-attention Fusion Network with Latent Contrastive Alignment for Alzheimer's Diagnosis.</strong>
-                Yuxiang Wei, Yanteng Zhang, Xi Xiao, Tianyang Wang, Xiao Wang, Vince D. Calhoun.
+                <strong><a href="https://openaccess.thecvf.com/content/WACV2026/html/Wei_4D_Multimodal_Co-attention_Fusion_Network_with_Latent_Contrastive_Alignment_for_WACV_2026_paper.html" target="_blank" rel="noopener noreferrer">4D Multimodal Co-attention Fusion Network with Latent Contrastive Alignment for Alzheimer's Diagnosis.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Yanteng Zhang, Xi Xiao, Tianyang Wang, Xiao Wang, Vince D. Calhoun.
                 <em>WACV</em>, 2026.
               </li>
               <li>
-                <strong>Spatiotemporal State Space Modeling of Dynamic Brain Connectivity in Cognitively Normal Individuals at Risk for Alzheimer's Disease.</strong>
-                Yuxiang Wei, Anees Abrol, Deqiang Qiu, James Lah, Allan I. Levey, Vince D. Calhoun.
+                <strong><a href="https://doi.org/10.1109/ICASSP55912.2026.11462765" target="_blank" rel="noopener noreferrer">Spatiotemporal State Space Modeling of Dynamic Brain Connectivity in Cognitively Normal Individuals at Risk for Alzheimer's Disease.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Anees Abrol, Deqiang Qiu, James Lah, Allan I. Levey, Vince D. Calhoun.
                 <em>ICASSP Oral</em>, 2026.
               </li>
               <li>
-                <strong>From Symptomatic to Pre-Symptomatic: Adaptive Knowledge Distillation for Early Alzheimer's Detection Using Functional MRI.</strong>
-                Yuxiang Wei, Anees Abrol, James Lah, Allan I. Levey, Vince D. Calhoun.
+                <strong><a href="https://doi.org/10.1109/TBME.2025.3597261" target="_blank" rel="noopener noreferrer">From Symptomatic to Pre-Symptomatic: Adaptive Knowledge Distillation for Early Alzheimer's Detection Using Functional MRI.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Anees Abrol, James Lah, Allan I. Levey, Vince D. Calhoun.
                 <em>IEEE Transactions on Biomedical Engineering</em>, 2026.
+              </li>
+              <li>
+                <strong><a href="https://doi.org/10.1007/978-3-032-31654-7_5" target="_blank" rel="noopener noreferrer">Learning Cognitive-Aware Representations for Imaging-Based Diagnosis of Alzheimer's Disease.</a></strong>
+                Huan Yu, Yanteng Zhang, <span class="author-highlight">Yuxiang Wei</span>, Yibing Fu, Siyuan Mei, Qiang Liu, Vince D. Calhoun.
+                <em>ICPR</em>, 2026.
               </li>
             </ol>
           </div>
@@ -222,46 +482,53 @@
           <div class="publication-group">
             <h3>General Deep Learning and Applied AI</h3>
             <p class="publication-group-summary">
-              Broader deep learning work across causal uplift modeling, visual recognition,
-              prompt tuning, multimodal prediction, and domain-specific AI benchmarks.
+              Broader deep learning work across multimodal alignment, causal uplift modeling, visual recognition,
+              prompt tuning, and domain-specific AI benchmarks.
             </p>
             <ol class="publication-list">
               <li>
-                <strong>RoadBench: A Vision-Language Foundation Model and Benchmark for Road Damage Understanding.</strong>
-                Xi Xiao, Yunbei Zhang, Janet Wang, Li Zhao, Yuxiang Wei, Tianyang Wang.
+                <strong><a href="https://doi.org/10.1007/978-3-032-37232-1_16" target="_blank" rel="noopener noreferrer">Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs.</a></strong>
+                Xi Xiao<sup>&dagger;</sup>, Chen Liu<sup>&dagger;</sup>, Chih-Ting Liao, Yunbei Zhang, Qizhen Lan, <span class="author-highlight">Yuxiang Wei</span>, Lin Zhao, Janet Wang, Jianyang Gu, Muchao Ye, Tianyang Wang, Hao Xu.
+                <em>ECCV</em>, 2026.
+              </li>
+              <li>
+                <strong><a href="https://openaccess.thecvf.com/content/WACV2026/html/Xiao_RoadBench_A_Vision-Language_Foundation_Model_and_Benchmark_for_Road_Damage_WACV_2026_paper.html" target="_blank" rel="noopener noreferrer">RoadBench: A Vision-Language Foundation Model and Benchmark for Road Damage Understanding.</a></strong>
+                Xi Xiao<sup>&dagger;</sup>, Yunbei Zhang<sup>&dagger;</sup>, Janet Wang, Lin Zhao, <span class="author-highlight">Yuxiang Wei</span>, et al.
                 <em>WACV</em>, 2026.
               </li>
               <li>
-                <strong>Visual Instance-aware Prompt Tuning.</strong>
-                Xi Xiao, Yunbei Zhang, Xingjian Li, Tianyang Wang, Xiao Wang, Yuxiang Wei, Jihun Hamm, Min Xu.
+                <strong><a href="https://doi.org/10.1145/3746027.3754858" target="_blank" rel="noopener noreferrer">Visual Instance-aware Prompt Tuning.</a></strong>
+                Xi Xiao<sup>&dagger;</sup>, Yunbei Zhang<sup>&dagger;</sup>, Xingjian Li, Tianyang Wang, Xiao Wang, <span class="author-highlight">Yuxiang Wei</span>, Jihun Hamm, Min Xu.
                 <em>ACM Multimedia</em>, 2025.
               </li>
               <li>
-                <strong>Multi-Treatment Multi-Task Uplift Modeling for Enhancing User Growth.</strong>
-                Yuxiang Wei, Zhaoxin Qiu, Yingjie Li, Yuke Sun, Xiaoling Li.
+                <strong><a href="https://arxiv.org/abs/2408.12803" target="_blank" rel="noopener noreferrer">Multi-Treatment Multi-Task Uplift Modeling for Enhancing User Growth.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Zhaoxin Qiu, Yingjie Li, Yuke Sun, Xiaoling Li.
                 <em>Neurocomputing</em>, accepted.
               </li>
               <li>
-                <strong>Wavelet Integrated Attention Network with Multi-Resolution Frequency Learning for Mixed-Type Wafer Defect Recognition.</strong>
-                Yuxiang Wei, Huan Wang.
+                <strong><a href="https://doi.org/10.1016/j.engappai.2023.105975" target="_blank" rel="noopener noreferrer">Wavelet Integrated Attention Network with Multi-Resolution Frequency Learning for Mixed-Type Wafer Defect Recognition.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Huan Wang.
                 <em>Engineering Applications of Artificial Intelligence</em>, 2023.
               </li>
               <li>
-                <strong>A Deep Network for Explainable Prediction of Non-imaging Phenotypes Using Anatomical Multi-view Data.</strong>
-                Yuxiang Wei, Yuqian Chen, Tengfei Xue, Leo Zekelman, Nikos Makris, Yogesh Rathi, Weidong Cai, Fan Zhang, Lauren J. O'Donnell.
+                <strong><a href="https://doi.org/10.1007/978-3-031-47292-3_15" target="_blank" rel="noopener noreferrer">A Deep Network for Explainable Prediction of Non-imaging Phenotypes Using Anatomical Multi-view Data.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Yuqian Chen, Tengfei Xue, Leo Zekelman, Nikos Makris, Yogesh Rathi, Weidong Cai, Fan Zhang, Lauren J. O'Donnell.
                 <em>MICCAI Workshop</em>, 2023.
               </li>
               <li>
-                <strong>Mixed-Type Wafer Defect Recognition with Multi-Scale Information Fusion Transformer.</strong>
-                Yuxiang Wei, Huan Wang.
+                <strong><a href="https://doi.org/10.1109/TSM.2022.3156583" target="_blank" rel="noopener noreferrer">Mixed-Type Wafer Defect Recognition with Multi-Scale Information Fusion Transformer.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Huan Wang.
                 <em>IEEE Transactions on Semiconductor Manufacturing</em>, 2022.
               </li>
               <li>
-                <strong>Mixed-type Wafer Defect Pattern Recognition Framework based on Multi-faceted Dynamic Convolution.</strong>
-                Yuxiang Wei, Huan Wang.
+                <strong><a href="https://doi.org/10.1109/TIM.2022.3178498" target="_blank" rel="noopener noreferrer">Mixed-type Wafer Defect Pattern Recognition Framework based on Multi-faceted Dynamic Convolution.</a></strong>
+                <span class="author-highlight">Yuxiang Wei</span>, Huan Wang.
                 <em>IEEE Transactions on Instrumentation and Measurement</em>, 2022.
               </li>
             </ol>
+            <p class="publication-note"><sup>&dagger;</sup> Equal contribution.</p>
+          </div>
           </div>
         </div>
       </section>
@@ -410,5 +677,83 @@
         <a href="https://www.linkedin.com/in/yuxiang-wei-867596236">LinkedIn</a>
       </div>
     </footer>
+
+    <dialog class="figure-lightbox" id="figure-lightbox" aria-label="Enlarged project figure">
+      <div class="lightbox-inner">
+        <button type="button" class="lightbox-close" aria-label="Close enlarged figure">&times; Close</button>
+        <img id="lightbox-img" src="" alt="" />
+      </div>
+    </dialog>
+
+    <script>
+      (() => {
+        const tabs = Array.from(document.querySelectorAll("[data-pub-tab]"));
+        const panels = {
+          selected: document.getElementById("panel-selected"),
+          all: document.getElementById("panel-all"),
+        };
+
+        function activateTab(targetKey, shouldFocus = false) {
+          tabs.forEach((tab) => {
+            const isMatch = tab.dataset.pubTab === targetKey;
+            tab.classList.toggle("is-active", isMatch);
+            tab.setAttribute("aria-selected", String(isMatch));
+            tab.tabIndex = isMatch ? 0 : -1;
+            if (isMatch && shouldFocus) {
+              tab.focus();
+            }
+          });
+          Object.entries(panels).forEach(([key, panel]) => {
+            if (panel) {
+              panel.hidden = key !== targetKey;
+            }
+          });
+        }
+
+        tabs.forEach((tab, index) => {
+          tab.addEventListener("click", () => activateTab(tab.dataset.pubTab));
+          tab.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+              event.preventDefault();
+              const nextIndex =
+                event.key === "ArrowRight"
+                  ? (index + 1) % tabs.length
+                  : (index - 1 + tabs.length) % tabs.length;
+              activateTab(tabs[nextIndex].dataset.pubTab, true);
+            }
+          });
+        });
+
+        document.querySelectorAll("[data-switch-tab]").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            activateTab(btn.dataset.switchTab);
+            const section = document.getElementById("publications");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        });
+
+        const lightbox = document.getElementById("figure-lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        if (lightbox && lightboxImg) {
+          document.querySelectorAll("[data-lightbox-src]").forEach((trigger) => {
+            trigger.addEventListener("click", () => {
+              lightboxImg.src = trigger.dataset.lightboxSrc;
+              lightboxImg.alt = trigger.dataset.lightboxAlt || "";
+              lightbox.showModal();
+            });
+          });
+          lightbox.querySelector(".lightbox-close").addEventListener("click", () => {
+            lightbox.close();
+          });
+          lightbox.addEventListener("click", (event) => {
+            if (event.target === lightbox) {
+              lightbox.close();
+            }
+          });
+        }
+      })();
+    </script>
   </body>
 </html>

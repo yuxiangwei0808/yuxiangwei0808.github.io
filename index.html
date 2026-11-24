@@ -140,23 +140,16 @@
           <div id="panel-selected" class="pub-panel" role="tabpanel" aria-labelledby="tab-selected">
             <div class="project-list">
               <article class="project-card">
-                <button
-                  type="button"
-                  class="project-media"
-                  data-lightbox-src="assets/projects/state-of-mind.webp"
-                  data-lightbox-alt="Overview of Spectator and BrainStateBench for learning and evaluating brain world models"
-                  aria-label="View full paper figure for State of Mind"
-                >
+                <div class="project-media">
                   <video
-                    src="assets/projects/state-of-mind.mp4?v=2"
+                    src="assets/projects/state-of-mind.mp4?v=3"
                     autoplay
                     muted
                     loop
                     playsinline
                     preload="metadata"
                   ></video>
-                  <span class="zoom-hint" aria-hidden="true">View paper figure</span>
-                </button>
+                </div>
                 <div class="project-body">
                   <div class="project-meta">
                     <span class="venue-badge">arXiv 2026</span>
@@ -183,23 +176,16 @@
               </article>
 
               <article class="project-card">
-                <button
-                  type="button"
-                  class="project-media"
-                  data-lightbox-src="assets/projects/fmri-lm.webp"
-                  data-lightbox-alt="Three-stage training pipeline of fMRI-LM for language-aligned fMRI understanding"
-                  aria-label="View full paper figure for fMRI-LM"
-                >
+                <div class="project-media">
                   <video
-                    src="assets/projects/fmri-lm.mp4?v=2"
+                    src="assets/projects/fmri-lm.mp4?v=3"
                     autoplay
                     muted
                     loop
                     playsinline
                     preload="metadata"
                   ></video>
-                  <span class="zoom-hint" aria-hidden="true">View paper figure</span>
-                </button>
+                </div>
                 <div class="project-body">
                   <div class="project-meta">
                     <span class="venue-badge">CVPR 2026</span>
@@ -224,23 +210,16 @@
               </article>
 
               <article class="project-card">
-                <button
-                  type="button"
-                  class="project-media"
-                  data-lightbox-src="assets/projects/confirm.svg"
-                  data-lightbox-alt="CONFIRM governance framework and deterministic verification gates for scientific agents"
-                  aria-label="View full paper figure for CONFIRM"
-                >
+                <div class="project-media">
                   <video
-                    src="assets/projects/confirm.mp4?v=2"
+                    src="assets/projects/confirm.mp4?v=3"
                     autoplay
                     muted
                     loop
                     playsinline
                     preload="metadata"
                   ></video>
-                  <span class="zoom-hint" aria-hidden="true">View paper figure</span>
-                </button>
+                </div>
                 <div class="project-body">
                   <div class="project-meta">
                     <span class="venue-badge">arXiv 2026</span>
@@ -267,23 +246,16 @@
               </article>
 
               <article class="project-card">
-                <button
-                  type="button"
-                  class="project-media"
-                  data-lightbox-src="assets/projects/more-brain.webp"
-                  data-lightbox-alt="Architecture of MoRE-Brain with hierarchical fMRI MoE encoder and time-and-space diffusion routing"
-                  aria-label="View full paper figure for MoRE-Brain"
-                >
+                <div class="project-media">
                   <video
-                    src="assets/projects/more-brain.mp4?v=2"
+                    src="assets/projects/more-brain.mp4?v=3"
                     autoplay
                     muted
                     loop
                     playsinline
                     preload="metadata"
                   ></video>
-                  <span class="zoom-hint" aria-hidden="true">View paper figure</span>
-                </button>
+                </div>
                 <div class="project-body">
                   <div class="project-meta">
                     <span class="venue-badge">NeurIPS 2025</span>
@@ -308,23 +280,16 @@
               </article>
 
               <article class="project-card">
-                <button
-                  type="button"
-                  class="project-media"
-                  data-lightbox-src="assets/projects/unified-mem.webp"
-                  data-lightbox-alt="Unified three-stage dialog memory framework comparing flat and graph memory indexing and retrieval"
-                  aria-label="View full paper figure for Does Memory Need Graphs"
-                >
+                <div class="project-media">
                   <video
-                    src="assets/projects/unified-mem.mp4?v=2"
+                    src="assets/projects/unified-mem.mp4?v=3"
                     autoplay
                     muted
                     loop
                     playsinline
                     preload="metadata"
                   ></video>
-                  <span class="zoom-hint" aria-hidden="true">View paper figure</span>
-                </button>
+                </div>
                 <div class="project-body">
                   <div class="project-meta">
                     <span class="venue-badge">ACL Main 2026</span>
@@ -670,13 +635,6 @@
       </div>
     </footer>
 
-    <dialog class="figure-lightbox" id="figure-lightbox" aria-label="Enlarged project figure">
-      <div class="lightbox-inner">
-        <button type="button" class="lightbox-close" aria-label="Close enlarged figure">&times; Close</button>
-        <img id="lightbox-img" src="" alt="" />
-      </div>
-    </dialog>
-
     <script>
       (() => {
         const tabs = Array.from(document.querySelectorAll("[data-pub-tab]"));
@@ -725,26 +683,6 @@
             }
           });
         });
-
-        const lightbox = document.getElementById("figure-lightbox");
-        const lightboxImg = document.getElementById("lightbox-img");
-        if (lightbox && lightboxImg) {
-          document.querySelectorAll("[data-lightbox-src]").forEach((trigger) => {
-            trigger.addEventListener("click", () => {
-              lightboxImg.src = trigger.dataset.lightboxSrc;
-              lightboxImg.alt = trigger.dataset.lightboxAlt || "";
-              lightbox.showModal();
-            });
-          });
-          lightbox.querySelector(".lightbox-close").addEventListener("click", () => {
-            lightbox.close();
-          });
-          lightbox.addEventListener("click", (event) => {
-            if (event.target === lightbox) {
-              lightbox.close();
-            }
-          });
-        }
       })();
     </script>
   </body>

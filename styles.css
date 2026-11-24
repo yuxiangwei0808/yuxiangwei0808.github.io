@@ -455,12 +455,12 @@ h3 {
   width: 100%;
   aspect-ratio: 780 / 440;
   padding: 0;
-  border: 1px solid #cfd7d2;
-  border-radius: 9px;
-  background: #0d1618;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
   cursor: zoom-in;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(15, 24, 22, 0.12);
+  box-shadow: 0 6px 20px rgba(23, 32, 27, 0.08);
 }
 
 .project-media video,
